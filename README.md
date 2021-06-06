@@ -3,15 +3,20 @@ A featured-limited version the http://SDR4.space/ embedded software, originally 
 
 This version runs only on x86-64 Linux systems.
 
+# Documentation
+
+The doc is available here : http://sdr4.space/doc/ (english only).
+
 # Installation
 
 Download the sdr4space_lite.deb file and run :   
-<code>
+```
 sudo dpkg -i sdr4space_lite.deb
-</code>
+```
 
-The binary *sdr4space.light* executable file is then installed in */opt/vmbase* . 
-<code>
+The binary sdr4space.light executable file is then installed in /opt/vmbase . 
+
+```
   ./sdr4space.light --help
 ---------------------------------------------------------------------------------
  SDR4.Space Version b1d5b5e3571afd9f5cee649b609507d0ccf0c18e - Build : 20210605
@@ -28,18 +33,17 @@ Usage:
   -f, --file arg     Script file name
   -d, --workdir arg  working directory, default is program location 
   -v, --verbose      Verbose mode (default: true)
-
-</code>
+```
 
 # running / testing
 
-Create a test file, for example hello.js :
-<code>
+Create a test file, for example hello.js :  
+```
   print('hello world!');
-  </code>
+```
   
- Then run it :
- <code>
+ Then run it :  
+```
   ./sdr4space.light -f ./test.js 
 ---------------------------------------------------------------------------------
  SDR4.Space Version b1d5b5e3571afd9f5cee649b609507d0ccf0c18e - Build : 20210605
@@ -55,7 +59,9 @@ Creating Radio Device factory
 
 No running task, ending.
 
- </code>
+```
+
+The Virtual Machine stops when no task is running.
 
 # Dependencies 
 
@@ -71,4 +77,7 @@ Note for Liquid-SDR :
 
 
 
-# 
+# Support - Bug reports
+
+While full support is provided to our commercial customers, free-version users should use the GitHub issue tracking.
+
