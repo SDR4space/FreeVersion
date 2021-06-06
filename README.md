@@ -1,7 +1,7 @@
 # Free Version
-A featured-limited version the http://SDR4.space/ embedded software, originally designed for embedded GPU systems.
+A featured-limited version of the http://SDR4.space/ embedded software, originally designed for embedded GPU systems.
 
-This version runs only on x86-64 Linux systems.
+This version runs only on x86-64 Linux systems and __doest not support GPU__.
 
 # Documentation
 
@@ -66,6 +66,7 @@ The Virtual Machine stops when no task is running.
 # Dependencies 
 
 The following packages are required :
+* SoapySDR, __version 0.8__
 * fftw3-3
 * liquid-sdr
 * mosquitto
@@ -73,7 +74,7 @@ The following packages are required :
 
 Note for Liquid-SDR :
 * This library can be downloaded and installed from source following instructions from https://github.com/jgaeddert/liquid-dsp
-* For Ubuntu 18.04, a package is available here : https://ubuntu.pkgs.org/18.04/ubuntu-universe-amd64/libliquid1d_1.3.1-1_amd64.deb.html
+* For Ubuntu 18.04 or 20.04, a package is available here : https://ubuntu.pkgs.org/18.04/ubuntu-universe-amd64/libliquid1d_1.3.1-1_amd64.deb.html
 
 
 
