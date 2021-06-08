@@ -5,16 +5,19 @@ This version runs only on x86-64 Linux systems and __doest not support GPU__.
 
 # Documentation
 
-The doc is available here : http://sdr4.space/doc/ (english only).
+The doc is available here : http://sdr4.space/doc/ (english only).  
+Basic examples based on the documentation are available here : https://github.com/SDR4space/Examples/
 
 # Installation
 
-Download the sdr4space_lite.deb file and run :   
+Download the sdr4space_lite.deb file and run dpkg installer:   
+
 ```
+wget https://github.com/SDR4space/FreeVersion/raw/main/sdr4space_lite.deb
 sudo dpkg -i sdr4space_lite.deb
 ```
 
-The binary sdr4space.light executable file is then installed in /opt/vmbase . 
+The binary sdr4space.light executable file is then installed in */opt/vmbase* . 
 
 ```
   ./sdr4space.light --help
@@ -65,12 +68,17 @@ The Virtual Machine stops when no task is running.
 
 # Dependencies 
 
+The dpkg installer should be able to install needed dependencies by itself.
+
 The following packages are required :
 * SoapySDR, __version 0.8__
 * fftw3-3
 * liquid-sdr
+* libsndfile1
+* libliquid1d
 * mosquitto
 * mosquitto-clients
+
 
 Note for Liquid-SDR :
 * This library can be downloaded and installed from source following instructions from https://github.com/jgaeddert/liquid-dsp
