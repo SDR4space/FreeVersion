@@ -70,10 +70,10 @@ The Virtual Machine stops when no task is running.
 
 The dpkg installer should be able to install needed dependencies by itself.
 
-The following packages are required :
+In case of trouble or for manual installation, the following packages are required :
 * SoapySDR, __version 0.8__
 * fftw3-3
-* liquid-sdr
+* liquid-sdr (libliquid1d)
 * libsndfile1
 * libliquid1d
 * mosquitto
