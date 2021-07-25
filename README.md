@@ -10,6 +10,9 @@ Basic examples based on the documentation are available here : https://github.co
 
 # Installation
 
+### Debian package (.deb)
+
+Install SoapySDR 0.8 (and device sub-modules) [from sources](https://github.com/pothosware/SoapySDR/releases/tag/soapy-sdr-0.8.0)
 Download the sdr4space_lite.deb file and run dpkg installer:   
 
 ```
@@ -37,6 +40,39 @@ Usage:
   -d, --workdir arg  working directory, default is program location 
   -v, --verbose      Verbose mode (default: true)
 ```
+### .AppImage file
+
+Download latest AppImage file from our [releases](https://github.com/SDR4space/FreeVersion/releases)  
+Make it executable ( `chmod +x SDR4space-lite.AppImage`) and run it.  
+
+* Notes:  
+All needed dependencies are in the AppImage file, including SoapySDR v0.8  
+First version v0.1 supports RTLSDR and plutoSDR devices only.
+
+#### Test 
+
+Notice the '0% Disk free space' : we are in a read-only environment.  
+ 
+```
+/home/user/Downloads/sdr4space_lite/SDR4space-lite.AppImage --help
+
+---------------------------------------------------------------------------------
+ SDR4.Space Version b1d5b5e3571afd9f5cee649b609507d0ccf0c18e - Build : 20210716
+      (c) SDR-Technologies SAS - http://sdr4.space/
+---------------------------------------------------------------------------------
+Creating Radio Device factory
+ Disk free space : 0.0 % 
+JavaScript SDR/Sat/DSP and more
+Usage:
+  sdrvm [OPTION...]
+
+  -t, --timing       Enable timing for each running task
+  -h, --help         Print usage
+  -f, --file arg     Script file name
+  -d, --workdir arg  working directory, default is program location 
+  -v, --verbose      Verbose mode (default: true)
+```
+
 
 # running / testing
 
