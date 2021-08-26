@@ -1,12 +1,26 @@
 # Free Version
 A featured-limited version of the http://SDR4.space/ embedded software, originally designed for embedded GPU systems.
 
-This version runs only on x86-64 Linux systems and __doest not support GPU__.
+
+## Releases
+
+ * __x86__  
+The x86_64 version available as realease runs under Linux systems and __doest not support GPU__.  
+
+ * __Jetson Nano__  
+The NanoSDR version has been tested on Jetson Nanao DevKit and __supports GPU acceleration__  
+It has been tested on our custom image available for download here : https://github.com/SDR-Technologies/NanoSDR
+ 
 
 # Documentation
 
 The doc is available here : http://sdr4.space/doc/ (english only).  
 Basic examples based on the documentation are available here : https://github.com/SDR4space/Examples/
+
+## Tutorial
+
+Thanks to Aaron from DragonOS team for this Youtube tutorial on sdr4space.lite basics :  
+https://www.youtube.com/watch?v=BxOK9Gzz7hg
 
 # Installation
 
